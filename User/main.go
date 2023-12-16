@@ -9,13 +9,11 @@ import (
 func StartServer() {
 	router := gin.Default()
 
-	// Define routes
 	router.POST("/users", createUserHandler)
 	router.PUT("/users/:id", updateUserHandler)
 	router.DELETE("/users/:id", deleteUserHandler)
 	router.GET("/users/:id/trips", getUserTripsHandler)
 
-	// Run the server
 	port := "8081"
 	log.Printf("User microservice is running on :%s", port)
 	err := router.Run(":" + port)

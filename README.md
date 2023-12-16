@@ -17,6 +17,7 @@ Manages the number of available seats for each trip.
 2. Architecture Diagram
 The carpooling application was built using 2 microservices, with the 2 main microservices being the User microservice and the Trip microservice.
 Each microservice has a MYSQL database as its persistent storage, keeping the data for each microservice respectively.
+Each Microservice has functions built for them to work listed above.
 
 3. Instructions to setting up and running microservices
 move directory into each file, user and trip, then run the main.go for each file.

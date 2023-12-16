@@ -38,18 +38,6 @@ func createTrip(trip *Trip) error {
 	return nil
 }
 
-func searchTrips() ([]Trip, error) {
-	// Implement logic to search and browse trips in the database
-	// You may use appropriate queries based on search criteria
-	return nil, nil
-}
-
-func enrollTrip(userID, tripID int) error {
-	// Implement logic to enroll in a trip in the database
-	// You may need to update the user's trips or trip's enrolled passengers
-	return nil
-}
-
 func startTrip(tripID int) error {
 	query := "UPDATE trips SET started_at=? WHERE id=?"
 

@@ -12,4 +12,3 @@ type Trip struct {
 	AvailableSeats    int       `json:"available_seats"`
 }
 
-// Implement database-related functions here
